@@ -1,0 +1,82 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: /
+display_url: /
+logo_url: /assets/hero.jpg
+
+collections:
+  - name: "website"
+    label: "Wedding Website"
+    files:
+      - name: "settings"
+        label: "Website Content & Design"
+        file: "content/settings.json"
+        format: "json"
+        fields:
+          - label: "Couple"
+            name: "couple"
+            widget: "object"
+            fields:
+              - {label: "First name 1", name: "first_name_1", widget: "string"}
+              - {label: "First name 2", name: "first_name_2", widget: "string"}
+              - {label: "Monogram", name: "monogram", widget: "string"}
+          - label: "Wedding Details"
+            name: "wedding"
+            widget: "object"
+            fields:
+              - {label: "Displayed date", name: "date_display", widget: "string"}
+              - {label: "Countdown date and time", name: "date_iso", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ"}
+              - {label: "Venue", name: "venue", widget: "string"}
+              - {label: "Location", name: "location", widget: "string"}
+              - {label: "RSVP deadline", name: "rsvp_deadline", widget: "string"}
+          - label: "Website Colors"
+            name: "colors"
+            widget: "object"
+            fields:
+              - {label: "Cream background", name: "cream", widget: "color"}
+              - {label: "Olive", name: "olive", widget: "color"}
+              - {label: "Dark olive", name: "olive_dark", widget: "color"}
+              - {label: "Walnut", name: "walnut", widget: "color"}
+              - {label: "Gold accent", name: "gold", widget: "color"}
+              - {label: "Main text", name: "ink", widget: "color"}
+          - label: "Home Page"
+            name: "home"
+            widget: "object"
+            fields:
+              - {label: "Hero eyebrow", name: "eyebrow", widget: "string"}
+              - {label: "Hero subtitle", name: "subtitle", widget: "string"}
+              - {label: "Welcome heading", name: "welcome_heading", widget: "string"}
+              - {label: "Welcome paragraph", name: "welcome_text", widget: "text"}
+              - {label: "Venue heading", name: "venue_heading", widget: "string"}
+              - {label: "Venue paragraph", name: "venue_text", widget: "text"}
+          - label: "Our Story"
+            name: "story"
+            widget: "object"
+            fields:
+              - {label: "Page introduction", name: "intro", widget: "string"}
+              - {label: "Closing sentence", name: "ending", widget: "text"}
+          - label: "Registry"
+            name: "registry"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Message", name: "message", widget: "text"}
+              - {label: "Zola URL", name: "zola_url", widget: "string", required: false}
+              - {label: "Honeymoon fund URL", name: "honeymoon_url", widget: "string", required: false}
+              - {label: "Amazon URL", name: "amazon_url", widget: "string", required: false}
+          - label: "Photos"
+            name: "images"
+            widget: "object"
+            fields:
+              - {label: "Homepage hero", name: "hero", widget: "image"}
+              - {label: "Farmhouse", name: "farmhouse", widget: "image"}
+              - {label: "Ceremony", name: "ceremony", widget: "image"}
+              - {label: "Cocktail hour", name: "cocktail", widget: "image"}
+              - {label: "Barn interior", name: "barn", widget: "image"}
+              - {label: "Reception", name: "reception", widget: "image"}
+              - {label: "Entrance", name: "entrance", widget: "image"}

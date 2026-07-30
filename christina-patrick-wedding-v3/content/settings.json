@@ -1,0 +1,50 @@
+{
+  "couple": {
+    "first_name_1": "Patrick",
+    "first_name_2": "Christina",
+    "monogram": "P & C"
+  },
+  "wedding": {
+    "date_display": "July 18, 2027",
+    "date_iso": "2027-07-18T16:00:00-04:00",
+    "venue": "Black Walnut Farm",
+    "location": "Saugerties, New York",
+    "rsvp_deadline": "May 1, 2027"
+  },
+  "colors": {
+    "cream": "#f7f3eb",
+    "olive": "#6f7456",
+    "olive_dark": "#4f543d",
+    "walnut": "#4b3528",
+    "gold": "#b59a63",
+    "ink": "#2c2925"
+  },
+  "home": {
+    "eyebrow": "A Weekend in the Hudson Valley",
+    "subtitle": "A weekend at Black Walnut Farm",
+    "welcome_heading": "We can’t wait to celebrate with you.",
+    "welcome_text": "Thank you for making the trip to spend the weekend with us in the Hudson Valley. We have gathered everything you will need right here—from the full weekend schedule to travel details and RSVP information.",
+    "venue_heading": "A celebration rooted in place.",
+    "venue_text": "From the woodland ceremony to dinner beneath the barn’s warm lights, every part of the weekend is designed around this beautiful Hudson Valley setting."
+  },
+  "story": {
+    "intro": "The Best Decision We Ever Made",
+    "ending": "We cannot wait to celebrate the next chapter with all of you."
+  },
+  "registry": {
+    "heading": "Thank you for celebrating with us.",
+    "message": "We are so grateful you are traveling to celebrate with us. Your love, laughter, and company mean more than anything. For those who have asked, registry links can be placed below.",
+    "zola_url": "#",
+    "honeymoon_url": "#",
+    "amazon_url": "#"
+  },
+  "images": {
+    "hero": "/assets/hero.jpg",
+    "farmhouse": "/assets/farmhouse.jpg",
+    "ceremony": "/assets/ceremony.jpg",
+    "cocktail": "/assets/cocktail-hour.jpg",
+    "barn": "/assets/barn-interior.jpg",
+    "reception": "/assets/reception.webp",
+    "entrance": "/assets/entrance.webp"
+  }
+}
