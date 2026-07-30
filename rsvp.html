@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>RSVP | Patrick & Christina</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">P <span>&</span> [NAME]</a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="our-story.html">Our Story</a>
+      <a href="weekend.html">The Weekend</a>
+      <a href="travel.html">Travel</a>
+      <a href="registry.html">Registry</a>
+      <a href="faq.html">FAQ</a>
+      <a class="nav-cta" href="rsvp.html">RSVP</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero" style="--hero-image:url('assets/hero.jpg')">
+    <div class="container"><p class="eyebrow" style="color:#fff">Kindly Respond by May 15, 2027</p><h1>RSVP</h1></div>
+  </section>
+  <section class="section">
+    <div class="container center max-copy center-copy"><p class="eyebrow">We Hope You Can Join Us</p><h2>Please send your response.</h2><p class="muted">This demonstration form validates in the browser but does not yet send data. Connect it to Formspree, Google Forms, Airtable, or your preferred form service before publishing.</p></div>
+  </section>
+  <section class="section-tight">
+    <div class="container">
+      <form id="rsvp-form" class="form-card">
+        <div class="form-grid">
+          <div class="field full"><label for="name">Full Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field full"><label>Will you attend?</label><div class="radio-group">
+            <label class="radio-option"><input type="radio" name="attendance" value="yes" required> Joyfully accepts</label>
+            <label class="radio-option"><input type="radio" name="attendance" value="no"> Regretfully declines</label>
+          </div></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="party-size">Number Attending</label><select id="party-size" name="party-size"><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+          <div class="field"><label for="meal">Meal Selection</label><select id="meal" name="meal"><option value="">Select one</option><option>Chicken</option><option>Beef</option><option>Vegetarian</option></select></div>
+          <div class="field"><label for="shuttle">Shuttle Needed?</label><select id="shuttle" name="shuttle"><option value="">Select one</option><option>Yes</option><option>No</option><option>Unsure</option></select></div>
+          <div class="field full"><label for="dietary">Dietary Restrictions</label><textarea id="dietary" name="dietary" rows="3"></textarea></div>
+          <div class="field full"><label for="song">Song Request</label><input id="song" name="song" type="text" placeholder="What will get you on the dance floor?"></div>
+          <div class="field full"><label for="message">Message for the Couple</label><textarea id="message" name="message" rows="4"></textarea></div>
+        </div>
+        <button class="button" type="submit">Submit RSVP</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="eyebrow">July 2027</p>
+        <h3>Patrick & Christina</h3>
+        <p>We are so grateful you will be celebrating with us in the Hudson Valley.</p>
+      </div>
+      <div>
+        <p class="eyebrow">Explore</p>
+        <div class="footer-links">
+          <a href="our-story.html">Our Story</a>
+          <a href="weekend.html">The Weekend</a>
+          <a href="travel.html">Travel</a>
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow">Details</p>
+        <div class="footer-links">
+          <a href="registry.html">Registry</a>
+          <a href="faq.html">FAQ</a>
+          <a href="rsvp.html">RSVP</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">Black Walnut Farm • Saugerties, New York</div>
+  </div>
+</footer>
+<script src="cms-content.js"></script><script src="script.js"></script>
+
+<script>if(window.netlifyIdentity){window.netlifyIdentity.on("init",u=>{if(!u)window.netlifyIdentity.on("login",()=>{location.href="/admin/"})})}</script></body></html>

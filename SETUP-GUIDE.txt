@@ -1,0 +1,31 @@
+PATRICK & CHRISTINA — VISUAL EDITOR SETUP
+
+This version includes a private editor at:
+https://YOUR-SITE.netlify.app/admin/
+
+ONE-TIME SETUP
+1. Create a free GitHub account if you do not already have one.
+2. In GitHub, create a new private repository.
+3. Upload every file and folder from this package to that repository.
+4. In Netlify, choose Add new project > Import an existing project > GitHub.
+5. Select the repository and deploy it. The publish directory is a single period: .
+6. In Netlify, enable Identity for the project.
+7. Under Identity > Services, enable Git Gateway.
+8. Set registration to Invite only.
+9. Invite your own email address as an Identity user.
+10. Accept the invitation and open https://YOUR-SITE.netlify.app/admin/
+
+USING THE EDITOR
+- Open /admin/
+- Choose Website Content & Design.
+- Edit names, date, wording, colors, registry URLs, or photos.
+- Press Publish.
+- Netlify rebuilds the website automatically.
+
+RSVPS
+- The form is configured as a Netlify Form.
+- Submissions appear in the Netlify project under Forms.
+- Before collecting real RSVPs, test the published form once.
+
+IMPORTANT
+Netlify manual drag-and-drop deployments cannot provide CMS publishing by themselves. The visual editor needs the site connected to a Git repository so edits can be saved and redeployed.
