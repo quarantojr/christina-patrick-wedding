@@ -4,7 +4,6 @@ backend:
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
-
 site_url: /
 display_url: /
 logo_url: /assets/hero.jpg
@@ -14,7 +13,7 @@ collections:
     label: "Wedding Website"
     files:
       - name: "settings"
-        label: "Website Content & Design"
+        label: "Edit Website"
         file: "content/settings.json"
         format: "json"
         fields:
@@ -38,37 +37,132 @@ collections:
             name: "colors"
             widget: "object"
             fields:
-              - {label: "Cream background", name: "cream", widget: "color"}
+              - {label: "Cream", name: "cream", widget: "color"}
               - {label: "Olive", name: "olive", widget: "color"}
               - {label: "Dark olive", name: "olive_dark", widget: "color"}
               - {label: "Walnut", name: "walnut", widget: "color"}
-              - {label: "Gold accent", name: "gold", widget: "color"}
-              - {label: "Main text", name: "ink", widget: "color"}
+              - {label: "Gold", name: "gold", widget: "color"}
+              - {label: "Text", name: "ink", widget: "color"}
           - label: "Home Page"
             name: "home"
             widget: "object"
             fields:
               - {label: "Hero eyebrow", name: "eyebrow", widget: "string"}
-              - {label: "Hero subtitle", name: "subtitle", widget: "string"}
+              - {label: "Welcome kicker", name: "welcome_kicker", widget: "string"}
               - {label: "Welcome heading", name: "welcome_heading", widget: "string"}
-              - {label: "Welcome paragraph", name: "welcome_text", widget: "text"}
+              - {label: "Welcome lead", name: "welcome_text", widget: "text"}
+              - {label: "Welcome details", name: "welcome_details", widget: "text"}
               - {label: "Venue heading", name: "venue_heading", widget: "string"}
               - {label: "Venue paragraph", name: "venue_text", widget: "text"}
+              - {label: "Ceremony heading", name: "ceremony_heading", widget: "string"}
+              - {label: "Ceremony text", name: "ceremony_text", widget: "string"}
+              - {label: "Journey heading", name: "journey_heading", widget: "string"}
+              - {label: "Journey intro", name: "journey_intro", widget: "text"}
+              - {label: "Weekend heading", name: "weekend_heading", widget: "string"}
+              - {label: "Final heading", name: "final_heading", widget: "string"}
+          - label: "Homepage Journey"
+            name: "journey"
+            widget: "list"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Caption", name: "caption", widget: "string"}
+              - {label: "Photo", name: "image", widget: "image"}
           - label: "Our Story"
             name: "story"
             widget: "object"
             fields:
-              - {label: "Page introduction", name: "intro", widget: "string"}
+              - {label: "Page kicker", name: "page_kicker", widget: "string"}
+              - {label: "Main heading", name: "heading", widget: "string"}
+              - {label: "Introduction", name: "intro", widget: "string"}
               - {label: "Closing sentence", name: "ending", widget: "text"}
+              - label: "Timeline"
+                name: "timeline"
+                widget: "list"
+                fields:
+                  - {label: "Year", name: "year", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Story", name: "text", widget: "text"}
+          - label: "Wedding Weekend"
+            name: "weekend"
+            widget: "object"
+            fields:
+              - {label: "Page kicker", name: "page_kicker", widget: "string"}
+              - {label: "Intro heading", name: "intro_heading", widget: "string"}
+              - {label: "Dress code heading", name: "dress_heading", widget: "string"}
+              - {label: "Dress code details", name: "dress_text", widget: "text"}
+              - label: "Days"
+                name: "days"
+                widget: "list"
+                fields:
+                  - {label: "Date", name: "date", widget: "string"}
+                  - {label: "Title", name: "title", widget: "string"}
+                  - label: "Events"
+                    name: "events"
+                    widget: "list"
+                    fields:
+                      - {label: "Time", name: "time", widget: "string"}
+                      - {label: "Event", name: "title", widget: "string"}
+                      - {label: "Details", name: "text", widget: "text"}
+          - label: "Travel & Local Guide"
+            name: "travel"
+            widget: "object"
+            fields:
+              - {label: "Page kicker", name: "page_kicker", widget: "string"}
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Introduction", name: "intro", widget: "text"}
+              - {label: "Transportation heading", name: "transport_heading", widget: "string"}
+              - {label: "Transportation details", name: "transport_text", widget: "text"}
+              - label: "Hotels"
+                name: "hotels"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "name", widget: "string"}
+                  - {label: "Details", name: "details", widget: "text"}
+                  - {label: "Link", name: "url", widget: "string", required: false}
+                  - {label: "Button text", name: "button", widget: "string"}
+              - label: "Local Guide"
+                name: "guide"
+                widget: "list"
+                fields:
+                  - {label: "Category", name: "category", widget: "string"}
+                  - {label: "Place", name: "name", widget: "string"}
+                  - {label: "Description", name: "description", widget: "text"}
+                  - {label: "Link", name: "url", widget: "string", required: false}
+          - label: "FAQ"
+            name: "faq"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Introduction", name: "intro", widget: "text"}
+              - label: "Questions"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Question", name: "question", widget: "string"}
+                  - {label: "Answer", name: "answer", widget: "text"}
           - label: "Registry"
             name: "registry"
             widget: "object"
             fields:
               - {label: "Heading", name: "heading", widget: "string"}
               - {label: "Message", name: "message", widget: "text"}
-              - {label: "Zola URL", name: "zola_url", widget: "string", required: false}
-              - {label: "Honeymoon fund URL", name: "honeymoon_url", widget: "string", required: false}
-              - {label: "Amazon URL", name: "amazon_url", widget: "string", required: false}
+              - label: "Registry cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - {label: "Title", name: "title", widget: "string"}
+                  - {label: "Description", name: "text", widget: "text"}
+                  - {label: "Link", name: "url", widget: "string", required: false}
+                  - {label: "Button text", name: "button", widget: "string"}
+          - label: "RSVP"
+            name: "rsvp"
+            widget: "object"
+            fields:
+              - {label: "Heading", name: "heading", widget: "string"}
+              - {label: "Introduction", name: "intro", widget: "text"}
+              - {label: "External form URL", name: "form_url", widget: "string", required: false}
           - label: "Photos"
             name: "images"
             widget: "object"

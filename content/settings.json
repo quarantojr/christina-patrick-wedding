@@ -20,23 +20,265 @@
     "ink": "#2c2925"
   },
   "home": {
-    "eyebrow": "A Weekend in the Hudson Valley",
-    "subtitle": "A weekend at Black Walnut Farm",
-    "welcome_heading": "We can’t wait to celebrate with you.",
-    "welcome_text": "Thank you for making the trip to spend the weekend with us in the Hudson Valley. We have gathered everything you will need right here—from the full weekend schedule to travel details and RSVP information.",
+    "eyebrow": "A Summer Weekend in the Hudson Valley",
+    "welcome_kicker": "Come Away With Us",
+    "welcome_heading": "A weekend worth traveling for.",
+    "welcome_text": "A summer celebration surrounded by forest, open fields, old stone, warm barn lights, and the people we love most.",
+    "welcome_details": "Thank you for making the trip to spend the weekend with us in the Hudson Valley. Everything you need—from the weekend schedule to travel details and RSVP information—is waiting here.",
     "venue_heading": "A celebration rooted in place.",
-    "venue_text": "From the woodland ceremony to dinner beneath the barn’s warm lights, every part of the weekend is designed around this beautiful Hudson Valley setting."
+    "venue_text": "From the woodland ceremony to dinner beneath the barn’s warm lights, every part of the weekend is designed around this beautiful Hudson Valley setting.",
+    "ceremony_heading": "Meet us where the woods begin.",
+    "ceremony_text": "Surrounded by trees. Gathered with everyone we love.",
+    "journey_heading": "From daylight to dancing.",
+    "journey_intro": "The day unfolds naturally—through the woods, across the lawn, beneath old timber, and into a night lit by string lights and a disco ball.",
+    "weekend_heading": "More than a day. A whole weekend.",
+    "final_heading": "Come celebrate in the wild."
   },
+  "journey": [
+    {
+      "label": "Arrive",
+      "heading": "Through the garden gate.",
+      "text": "The first glimpse of Black Walnut Farm feels tucked away from everything.",
+      "caption": "Welcome to Black Walnut Farm",
+      "image": "/assets/entrance.webp"
+    },
+    {
+      "label": "Gather",
+      "heading": "Golden hour on the lawn.",
+      "text": "Cocktails, conversation, and the warm glow of the barn as evening settles in.",
+      "caption": "Cocktail hour at dusk",
+      "image": "/assets/cocktail-hour.jpg"
+    },
+    {
+      "label": "Dine",
+      "heading": "Beneath beams and candlelight.",
+      "text": "A historic barn, an intimate dinner, and the kind of room that changes as the sun goes down.",
+      "caption": "The historic barn",
+      "image": "/assets/barn-interior.jpg"
+    },
+    {
+      "label": "Celebrate",
+      "heading": "Stay until the lights come on.",
+      "text": "Music, movement, and one unforgettable night beneath the disco ball.",
+      "caption": "After dark",
+      "image": "/assets/reception.webp"
+    }
+  ],
   "story": {
+    "page_kicker": "From Then to Forever",
+    "heading": "It started with [how you met].",
     "intro": "The Best Decision We Ever Made",
-    "ending": "We cannot wait to celebrate the next chapter with all of you."
+    "ending": "We cannot wait to celebrate the next chapter with all of you.",
+    "timeline": [
+      {
+        "year": "2018",
+        "title": "The Beginning",
+        "text": "We met [where/how]. What began as [short detail] quickly became something neither of us wanted to be without."
+      },
+      {
+        "year": "2019",
+        "title": "Our First Adventure",
+        "text": "Our first trip together took us to [place], where we learned [fun or meaningful detail]."
+      },
+      {
+        "year": "2022",
+        "title": "Building a Life",
+        "text": "From quiet nights at home to our biggest milestones, we built a life filled with [shared interests, traditions, or values]."
+      },
+      {
+        "year": "2026",
+        "title": "The Proposal",
+        "text": "On [date or occasion], Patrick asked the easiest question—and Christina said yes."
+      },
+      {
+        "year": "2027",
+        "title": "We Get Married",
+        "text": "Now we get to celebrate the next chapter with all of you at Black Walnut Farm."
+      }
+    ]
+  },
+  "weekend": {
+    "page_kicker": "July 16–18, 2027",
+    "intro_heading": "A full weekend together.",
+    "dress_heading": "Summer formal, with the farm in mind.",
+    "dress_text": "Think elevated summer attire: suits, dresses, polished separates, and footwear comfortable enough for grass and gravel.",
+    "days": [
+      {
+        "date": "Friday, July 16",
+        "title": "Welcome Drinks",
+        "events": [
+          {
+            "time": "7:00 PM",
+            "title": "Meet Us for a Drink",
+            "text": "Join us for casual welcome drinks in Saugerties. Location and attire details to come."
+          }
+        ]
+      },
+      {
+        "date": "Saturday, July 17",
+        "title": "The Wedding Day",
+        "events": [
+          {
+            "time": "3:30 PM",
+            "title": "Guest Arrival",
+            "text": "Please arrive early enough to find your seat and enjoy the grounds."
+          },
+          {
+            "time": "4:00 PM",
+            "title": "Ceremony",
+            "text": "Outdoor ceremony at Black Walnut Farm, weather permitting."
+          },
+          {
+            "time": "4:30 PM",
+            "title": "Cocktail Hour",
+            "text": "Seasonal bites, signature cocktails, and live music."
+          },
+          {
+            "time": "6:00 PM",
+            "title": "Dinner & Dancing",
+            "text": "Dinner, toasts, and a full night on the dance floor."
+          },
+          {
+            "time": "11:00 PM",
+            "title": "After Party",
+            "text": "Details to be announced."
+          }
+        ]
+      },
+      {
+        "date": "Sunday, July 18",
+        "title": "Farewell Brunch",
+        "events": [
+          {
+            "time": "10:30 AM",
+            "title": "One More Toast",
+            "text": "Stop by for coffee, brunch, and a final goodbye before heading home."
+          }
+        ]
+      }
+    ]
+  },
+  "travel": {
+    "page_kicker": "Plan Your Stay",
+    "heading": "Welcome to the Hudson Valley.",
+    "intro": "Use this page as a curated guide for lodging, transportation, and favorite local stops. Hotel blocks and shuttle details will be added as plans are finalized.",
+    "transport_heading": "Shuttle information coming soon.",
+    "transport_text": "We will update this page when pickup locations and departure times are finalized.",
+    "hotels": [
+      {
+        "name": "Room Block One",
+        "details": "[Hotel Name]\n[Address]\n[Booking deadline]",
+        "url": "#",
+        "button": "Book This Hotel"
+      },
+      {
+        "name": "Room Block Two",
+        "details": "[Hotel Name]\n[Address]\n[Booking deadline]",
+        "url": "#",
+        "button": "Book This Hotel"
+      },
+      {
+        "name": "Alternative Stays",
+        "details": "Consider boutique inns and vacation rentals in Saugerties, Woodstock, Kingston, or Catskill.",
+        "url": "#",
+        "button": "Browse Options"
+      }
+    ],
+    "guide": [
+      {
+        "category": "Coffee & Breakfast",
+        "name": "Add a favorite café",
+        "description": "Replace this with a bakery, coffee shop, or brunch recommendation.",
+        "url": "#"
+      },
+      {
+        "category": "Explore",
+        "name": "Add a favorite outing",
+        "description": "Consider a hike, market, gallery, scenic drive, or nearby town.",
+        "url": "#"
+      },
+      {
+        "category": "Dinner & Drinks",
+        "name": "Add a favorite restaurant",
+        "description": "Replace this with a restaurant, brewery, winery, or relaxed gathering spot.",
+        "url": "#"
+      }
+    ]
+  },
+  "faq": {
+    "heading": "A few helpful details.",
+    "intro": "We will continue updating this page as plans are finalized.",
+    "items": [
+      {
+        "question": "What is the dress code?",
+        "answer": "The dress code is summer formal. Suits, dresses, jumpsuits, and polished separates are all appropriate. Because portions of the celebration may take place on grass or gravel, choose footwear accordingly."
+      },
+      {
+        "question": "Can I bring a plus-one?",
+        "answer": "Please refer to your invitation and RSVP form. Only guests specifically named on the invitation are included."
+      },
+      {
+        "question": "Are children invited?",
+        "answer": "We love your little ones, but unless they are specifically named on the invitation, this will be an adults-only celebration."
+      },
+      {
+        "question": "Will the ceremony be outside?",
+        "answer": "The ceremony is planned outdoors, weather permitting. The venue has a rain plan, so the celebration will continue regardless of weather."
+      },
+      {
+        "question": "Will transportation be provided?",
+        "answer": "We expect to provide transportation from selected hotel blocks. Exact pickup locations and times will be posted on the Travel page."
+      },
+      {
+        "question": "Is there parking at the venue?",
+        "answer": "Yes. On-site parking information and any special instructions will be shared closer to the wedding."
+      },
+      {
+        "question": "When should I arrive?",
+        "answer": "Please plan to arrive approximately 30 minutes before the ceremony so you have time to park, walk the grounds, and find your seat."
+      },
+      {
+        "question": "Can you accommodate dietary restrictions?",
+        "answer": "Yes. Please include allergies or dietary restrictions in your RSVP so our catering team can plan accordingly."
+      },
+      {
+        "question": "Can I take photos during the ceremony?",
+        "answer": "We kindly ask guests to keep phones and cameras away during the ceremony. You are welcome to take and share photos during cocktail hour and the reception."
+      },
+      {
+        "question": "Who should I contact with questions?",
+        "answer": "Please contact [designated person] at [phone/email] for questions that are not answered on this website."
+      }
+    ]
   },
   "registry": {
     "heading": "Thank you for celebrating with us.",
-    "message": "We are so grateful you are traveling to celebrate with us. Your love, laughter, and company mean more than anything. For those who have asked, registry links can be placed below.",
-    "zola_url": "#",
-    "honeymoon_url": "#",
-    "amazon_url": "#"
+    "message": "Your love and support mean more than anything. For guests who have asked, we have included a few registry options below.",
+    "cards": [
+      {
+        "title": "Home Registry",
+        "text": "Replace with your selected retailer.",
+        "url": "#",
+        "button": "View Registry"
+      },
+      {
+        "title": "Honeymoon Fund",
+        "text": "Contribute toward experiences on our honeymoon.",
+        "url": "#",
+        "button": "Explore the Fund"
+      },
+      {
+        "title": "Group Gifts",
+        "text": "Optional larger gifts or experiences.",
+        "url": "#",
+        "button": "View Options"
+      }
+    ]
+  },
+  "rsvp": {
+    "heading": "Please send your response.",
+    "intro": "Online RSVP details will be added once your guest list and response method are finalized.",
+    "form_url": ""
   },
   "images": {
     "hero": "/assets/hero.jpg",

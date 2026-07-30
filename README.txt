@@ -1,20 +1,16 @@
-PATRICK & CHRISTINA WEDDING WEBSITE
+CHRISTINA + PATRICK WEDDING WEBSITE — VERSION 4
 
-This rebuilt version includes styles.css, script.js, and an assets folder containing the Black Walnut Farm photos you supplied.
+Version 4 makes the website substantially easier to edit. The online /admin editor now controls the homepage, journey photos and copy, Our Story timeline, wedding weekend schedule, Travel hotels and local guide, FAQ, registry, RSVP wording, colors, wedding details, and core photos.
 
-PREVIEW
-- Best: upload the entire ZIP/folder to Netlify using Deploy manually.
-- On a computer: unzip and open index.html.
-- iPhone/iPad Files preview may not reliably run multi-file websites.
+LOCAL PREVIEW
+Open the folder in VS Code and click Go Live. Save with Command + S to refresh.
 
-BEFORE LAUNCH
-- Replace placeholder story, hotel, registry, schedule, contact, and RSVP details.
-- Connect the RSVP form to Formspree, Tally, Google Forms, or Airtable.
-- Confirm the wedding date/time in script.js.
+DIRECT EDITING
+Most editable content lives in content/settings.json. Keep quotation marks, commas, brackets, and braces intact.
 
-VERSION 3 — THE ARRIVAL
-- Cinematic arrival hero and page progress indicator
-- Editorial Black Walnut Farm story
-- Scroll-led venue journey from entrance to reception
-- Expanded weekend portal and refined countdown
-- Subtle parallax motion with reduced-motion accessibility support
+ONLINE EDITING
+After GitHub and Netlify CMS are configured, visit:
+https://christina-patrick-wedding.netlify.app/admin/
+
+IMPORTANT
+The RSVP form remains a preview and must be connected to a real form service before invitations are sent. Placeholder hotel, local-guide, registry, and story details still need to be replaced.

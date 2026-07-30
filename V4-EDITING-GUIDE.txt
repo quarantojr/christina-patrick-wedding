@@ -1,0 +1,16 @@
+VERSION 4 EDITING GUIDE
+
+EASIEST LOCAL METHOD
+1. Open content/settings.json in VS Code.
+2. Change only the words between quotation marks.
+3. Press Command + S.
+4. Your Live Server preview refreshes automatically.
+
+ONLINE NO-CODE METHOD
+Visit /admin/ on the live Netlify site. The editor is organized into Couple, Wedding Details, Colors, Home Page, Homepage Journey, Our Story, Wedding Weekend, Travel & Local Guide, FAQ, Registry, RSVP, and Photos.
+
+PHOTOS
+You may upload photos in the online editor. For local edits, place a photo in assets and change its path in content/settings.json. Example: /assets/new-hero.jpg
+
+PUBLISHING
+Once the folder replaces the files in GitHub, Netlify will redeploy automatically.

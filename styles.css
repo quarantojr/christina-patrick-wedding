@@ -57,3 +57,14 @@
 @media(max-width:900px){.arrival-content{width:min(100% - 38px,1120px)}.arrival h1{font-size:clamp(4.8rem,18vw,8rem)}.arrival .name-two{margin-left:15px}.arrival .ampersand{margin-left:42%;}.arrival-scroll{display:none}.invitation-grid{grid-template-columns:1fr;gap:35px}.chapter-mark{display:none}.farm-intro{grid-template-columns:1fr;min-height:auto}.farm-photo{margin:30px 18px 0;min-height:580px}.farm-copy{padding:80px 28px 100px}.journey-header{grid-template-columns:1fr;gap:30px}.journey-row,.journey-row.reverse{grid-template-columns:1fr;gap:42px;width:min(100% - 36px,760px)}.journey-row.reverse .journey-copy,.journey-row.reverse .journey-image{grid-column:auto;grid-row:auto}.journey-row.reverse .journey-copy{order:0}.journey-row.reverse .journey-image{order:1}.journey-image img{height:min(110vw,720px)}.portal-layout,.countdown-v3-layout{grid-template-columns:1fr;gap:70px}.home-v3 .nav-links{color:var(--ink)}}
 @media(max-width:650px){.arrival-border{inset:10px}.arrival-content{padding:130px 0 62px}.arrival-kicker{letter-spacing:.2em}.arrival h1{font-size:clamp(4rem,19vw,6.2rem)}.arrival-details{align-items:flex-start;gap:12px}.detail-rule{width:28px;margin-top:8px}.invitation-section{padding:95px 0 110px}.invitation-copy h2{font-size:3.8rem}.farm-photo{min-height:390px}.farm-number{font-size:4.5rem}.woods-scene{min-height:75vh}.woods-copy{padding-bottom:50px}.journey-section{padding:100px 0}.journey-header{margin-bottom:80px}.journey-list{gap:100px}.journey-copy>span{font-size:3.8rem}.journey-image figcaption{display:none}.weekend-portal{min-height:80vh}.portal-layout{padding:85px 0}.portal-days a{grid-template-columns:70px 1fr auto}.countdown-v3{padding:90px 0}.countdown-v3 .countdown{grid-template-columns:repeat(2,1fr)}.final-invitation{min-height:76vh}}
 @media(prefers-reduced-motion:reduce){.arrival-scroll i:after{animation:none}.arrival-media,.woods-media,.portal-media,.final-media{transform:none!important}}
+
+/* Version 4: expanded editorial system and CMS-driven cards */
+.home-v4 .arrival-content{max-width:1180px}
+.home-v4 .arrival h1{letter-spacing:-.045em}
+.day-block{padding:clamp(2rem,5vw,4.5rem) 0;border-top:1px solid rgba(44,41,37,.16)}
+.day-block:first-child{border-top:0}
+.guide-card{display:flex;flex-direction:column;min-height:290px}
+.guide-card .arrow-link{margin-top:auto;padding-top:1.5rem}
+[data-hotel-list] .card,[data-guide-list] .card{transition:transform .35s ease,box-shadow .35s ease}
+[data-hotel-list] .card:hover,[data-guide-list] .card:hover{transform:translateY(-6px);box-shadow:0 24px 55px rgba(43,35,28,.09)}
+@media(max-width:760px){.day-block{padding:2.5rem 0}.guide-card{min-height:auto}}
