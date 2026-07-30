@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="home-page">
+<body class="home-page home-v3">
+  <div class="page-progress" aria-hidden="true"><span></span></div>
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="index.html" aria-label="Patrick and Christina home">P <span>&</span> C</a>
@@ -22,71 +23,113 @@
   </header>
 
   <main>
-    <section class="hero hero-v2" aria-label="Black Walnut Farm at dusk">
-      <div class="hero-shade"></div>
-      <div class="hero-content container">
-        <p class="eyebrow reveal">A Weekend in the Hudson Valley</p>
-        <h1 class="reveal reveal-delay-1"><span>Patrick</span><em>&</em><span>Christina</span></h1>
-        <div class="hero-meta reveal reveal-delay-2">
-          <p data-date>July 18, 2027</p><i></i><p><span data-venue>Black Walnut Farm</span><br><span data-location>Saugerties, New York</span></p>
-        </div>
-        <a class="text-link light reveal reveal-delay-3" href="#welcome">Enter the weekend <span>↓</span></a>
-      </div>
-      <div class="hero-frame" aria-hidden="true"></div>
-    </section>
-
-    <section id="welcome" class="section intro-section">
-      <div class="container intro-grid">
-        <div class="intro-index reveal"><span>01</span><div></div><span>Welcome</span></div>
-        <div class="intro-copy welcome reveal">
-          <p class="eyebrow">July 2027</p>
-          <h2>We can’t wait to celebrate with you.</h2>
-          <p class="lead muted">Thank you for making the trip to spend the weekend with us in the Hudson Valley. We have gathered everything you will need right here—from the full weekend schedule to travel details and RSVP information.</p>
-          <div class="actions"><a class="button" href="weekend.html">Explore the Weekend</a><a class="text-link" href="rsvp.html">Respond to the invitation <span>↗</span></a></div>
+    <section class="arrival" data-arrival aria-label="Black Walnut Farm at dusk">
+      <div class="arrival-media" data-parallax="0.12"></div>
+      <div class="arrival-wash"></div>
+      <div class="arrival-grain"></div>
+      <div class="arrival-content container">
+        <p class="arrival-kicker reveal">A Summer Weekend in the Hudson Valley</p>
+        <h1 aria-label="Patrick and Christina" class="reveal reveal-delay-1">
+          <span class="name-one">Patrick</span><span class="ampersand">&</span><span class="name-two">Christina</span>
+        </h1>
+        <div class="arrival-details reveal reveal-delay-2">
+          <p><span data-date>July 18, 2027</span></p>
+          <span class="detail-rule"></span>
+          <p><span data-venue>Black Walnut Farm</span><br><span data-location>Saugerties, New York</span></p>
         </div>
       </div>
+      <a class="arrival-scroll" href="#invitation" aria-label="Continue to the invitation"><span>Begin</span><i></i></a>
+      <div class="arrival-border" aria-hidden="true"></div>
     </section>
 
-    <section class="venue-story">
-      <div class="venue-image reveal"><img src="assets/farmhouse.jpg" alt="Stone farmhouse at Black Walnut Farm"></div>
-      <div class="venue-copy reveal">
+    <section id="invitation" class="invitation-section">
+      <div class="container invitation-grid">
+        <div class="chapter-mark reveal"><span>Chapter I</span><i></i><span>The Invitation</span></div>
+        <div class="invitation-copy reveal">
+          <p class="eyebrow">Come Away With Us</p>
+          <h2>A weekend worth<br>traveling for.</h2>
+          <p class="lead muted">A summer celebration surrounded by forest, open fields, old stone, warm barn lights, and the people we love most.</p>
+          <p class="muted welcome-text">Thank you for making the trip to spend the weekend with us in the Hudson Valley. Everything you need—from the weekend schedule to travel details and RSVP information—is waiting here.</p>
+          <div class="actions"><a class="button" href="weekend.html">Explore the Weekend</a><a class="arrow-link" href="rsvp.html">Respond to the Invitation <span>↗</span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="farm-intro">
+      <div class="farm-number" aria-hidden="true">02</div>
+      <div class="farm-photo reveal"><img src="assets/farmhouse.jpg" alt="The ivy-covered stone farmhouse at Black Walnut Farm"></div>
+      <div class="farm-copy reveal">
         <p class="eyebrow">Black Walnut Farm</p>
-        <h2>A celebration rooted in place.</h2>
-        <p class="muted">From a ceremony beneath the trees to dinner under the barn’s warm lights, every part of the weekend is shaped by this magical corner of the Hudson Valley.</p>
-        <a class="text-link" href="travel.html">Discover Saugerties <span>↗</span></a>
+        <h2>A celebration<br>rooted in place.</h2>
+        <p class="muted venue-text">From the woodland ceremony to dinner beneath the barn’s warm lights, every part of the weekend is designed around this beautiful Hudson Valley setting.</p>
+        <dl class="farm-facts">
+          <div><dt>Setting</dt><dd>Woodland & countryside</dd></div>
+          <div><dt>Season</dt><dd>High summer</dd></div>
+          <div><dt>Coordinates</dt><dd>42°04′N · 73°57′W</dd></div>
+        </dl>
       </div>
-      <div class="venue-caption">42°04′N<br>73°57′W</div>
     </section>
 
-    <section class="immersive-panel" style="--panel-image:url('assets/ceremony.jpg')">
-      <div class="panel-overlay"></div>
-      <div class="container panel-copy reveal">
+    <section class="woods-scene" data-scene>
+      <div class="woods-media" data-parallax="0.08"></div>
+      <div class="woods-overlay"></div>
+      <div class="container woods-copy reveal">
         <p class="eyebrow">The Ceremony</p>
-        <h2>In the woods,<br>with everyone we love.</h2>
+        <h2>Meet us where<br>the woods begin.</h2>
+        <p>Surrounded by trees. Gathered with everyone we love.</p>
+      </div>
+      <div class="scene-index">01 / 04</div>
+    </section>
+
+    <section class="journey-section">
+      <div class="container journey-header reveal">
+        <div><p class="eyebrow">The Journey</p><h2>From daylight<br>to dancing.</h2></div>
+        <p class="muted">The day unfolds naturally—through the woods, across the lawn, beneath old timber, and into a night lit by string lights and a disco ball.</p>
+      </div>
+
+      <div class="journey-list">
+        <article class="journey-row">
+          <div class="journey-copy reveal"><span>01</span><p class="eyebrow">Arrive</p><h3>Through the garden gate.</h3><p class="muted">The first glimpse of Black Walnut Farm feels tucked away from everything.</p></div>
+          <figure class="journey-image reveal"><img src="assets/entrance.webp" alt="Garden entrance to Black Walnut Farm"><figcaption>Welcome to Black Walnut Farm</figcaption></figure>
+        </article>
+        <article class="journey-row reverse">
+          <div class="journey-copy reveal"><span>02</span><p class="eyebrow">Gather</p><h3>Golden hour on the lawn.</h3><p class="muted">Cocktails, conversation, and the warm glow of the barn as evening settles in.</p></div>
+          <figure class="journey-image reveal"><img src="assets/cocktail-hour.jpg" alt="Guests gathering outside the barn at dusk"><figcaption>Cocktail hour at dusk</figcaption></figure>
+        </article>
+        <article class="journey-row">
+          <div class="journey-copy reveal"><span>03</span><p class="eyebrow">Dine</p><h3>Beneath beams and candlelight.</h3><p class="muted">A historic barn, an intimate dinner, and the kind of room that changes as the sun goes down.</p></div>
+          <figure class="journey-image reveal"><img src="assets/barn-interior.jpg" alt="Historic timber barn interior"><figcaption>The historic barn</figcaption></figure>
+        </article>
+        <article class="journey-row reverse">
+          <div class="journey-copy reveal"><span>04</span><p class="eyebrow">Celebrate</p><h3>Stay until the lights come on.</h3><p class="muted">Music, movement, and one unforgettable night beneath the disco ball.</p></div>
+          <figure class="journey-image reveal"><img src="assets/reception.webp" alt="Barn reception beneath string lights and a disco ball"><figcaption>After dark</figcaption></figure>
+        </article>
       </div>
     </section>
 
-    <section class="section experience-section">
-      <div class="container">
-        <div class="section-heading reveal"><div><p class="eyebrow">The Experience</p><h2>One unforgettable<br>summer weekend.</h2></div><p class="muted">A gathering that begins in the woods, moves beneath the barn lights, and ends on the dance floor.</p></div>
-        <div class="experience-grid">
-          <a class="experience-card tall reveal" href="weekend.html"><img src="assets/cocktail-hour.jpg" alt="Guests gathering outside the barn"><div class="card-copy"><span>01</span><h3>Gather</h3><p>Welcome drinks and summer air.</p></div></a>
-          <a class="experience-card reveal" href="weekend.html"><img src="assets/barn-interior.jpg" alt="Rustic barn interior"><div class="card-copy"><span>02</span><h3>Celebrate</h3><p>Dinner beneath timber and lights.</p></div></a>
-          <a class="experience-card reveal" href="weekend.html"><img src="assets/reception.webp" alt="Disco ball and string lights in the barn"><div class="card-copy"><span>03</span><h3>Dance</h3><p>Late into the Hudson Valley night.</p></div></a>
+    <section class="weekend-portal">
+      <div class="portal-media" data-parallax="0.06"></div>
+      <div class="portal-shade"></div>
+      <div class="container portal-layout">
+        <div class="portal-copy reveal"><p class="eyebrow">Friday Through Sunday</p><h2>More than a day.<br>A whole weekend.</h2><a class="button button-light" href="weekend.html">View the Weekend</a></div>
+        <div class="portal-days reveal">
+          <a href="weekend.html"><span>Friday</span><strong>Arrive & unwind</strong><i>↗</i></a>
+          <a href="weekend.html"><span>Saturday</span><strong>The celebration</strong><i>↗</i></a>
+          <a href="weekend.html"><span>Sunday</span><strong>One last toast</strong><i>↗</i></a>
         </div>
       </div>
     </section>
 
-    <section class="countdown-section">
-      <div class="container countdown-layout reveal">
-        <div><p class="eyebrow">Until We Say “I Do”</p><h2>The adventure<br>starts here.</h2></div>
+    <section class="countdown-section countdown-v3">
+      <div class="container countdown-v3-layout reveal">
+        <div class="countdown-title"><p class="eyebrow">Until We Say “I Do”</p><h2>The countdown<br>is on.</h2></div>
         <div class="countdown" data-countdown><div><strong data-days>00</strong><span>Days</span></div><div><strong data-hours>00</strong><span>Hours</span></div><div><strong data-minutes>00</strong><span>Minutes</span></div><div><strong data-seconds>00</strong><span>Seconds</span></div></div>
       </div>
     </section>
 
-    <section class="closing-scene" style="--closing-image:url('assets/hero.jpg')">
-      <div class="closing-overlay"></div>
-      <div class="container closing-copy reveal"><p class="eyebrow">See You in July</p><h2>Meet us where<br>the woods begin.</h2><a class="button button-light" href="rsvp.html">RSVP</a></div>
+    <section class="final-invitation">
+      <div class="final-media" data-parallax="0.05"></div><div class="final-shade"></div>
+      <div class="container final-copy reveal"><p class="eyebrow">Patrick & Christina</p><h2>Come celebrate<br>in the wild.</h2><p>Black Walnut Farm · Saugerties, New York</p><a class="button button-light" href="rsvp.html">Join the Celebration</a></div>
     </section>
   </main>
 

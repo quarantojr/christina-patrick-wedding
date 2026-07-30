@@ -15,10 +15,19 @@
     document.querySelectorAll('[data-rsvp-deadline]').forEach(el=>el.textContent=s.wedding.rsvp_deadline);
     const path=location.pathname.split('/').pop()||'index.html';
     if(path==='index.html'||path===''){
-      const hero=document.querySelector('.hero'); if(hero) hero.style.backgroundImage=`linear-gradient(90deg,rgba(20,20,17,.68),rgba(20,20,17,.14) 58%,rgba(20,20,17,.18)),url("${s.images.hero}")`;
-      const map=[['.hero .eyebrow',s.home.eyebrow],['.hero-sub',s.home.subtitle],['.welcome h2',s.home.welcome_heading],['.welcome .muted',s.home.welcome_text],['section .max h2',s.home.venue_heading],['section .max .muted',s.home.venue_text]];
-      map.forEach(([q,t])=>{const e=document.querySelector(q);if(e&&t)e.textContent=t});
-      const imgs=document.querySelectorAll('img'); imgs.forEach(img=>{if(img.src.includes('farmhouse'))img.src=s.images.farmhouse;if(img.src.includes('reception'))img.src=s.images.reception});
+      const setText=(q,t)=>{const e=document.querySelector(q);if(e&&t)e.textContent=t};
+      setText('.arrival-kicker',s.home.eyebrow);
+      setText('.invitation-copy h2',s.home.welcome_heading);
+      setText('.welcome-text',s.home.welcome_text);
+      setText('.farm-copy h2',s.home.venue_heading);
+      setText('.venue-text',s.home.venue_text);
+      const imageMap=[
+        ['.arrival-media',s.images.hero],['.farm-photo img',s.images.farmhouse],['.woods-media',s.images.ceremony],
+        ['.journey-row:nth-child(1) img',s.images.entrance],['.journey-row:nth-child(2) img',s.images.cocktail],
+        ['.journey-row:nth-child(3) img',s.images.barn],['.journey-row:nth-child(4) img',s.images.reception],
+        ['.portal-media',s.images.cocktail],['.final-media',s.images.reception]
+      ];
+      imageMap.forEach(([q,src])=>{const e=document.querySelector(q);if(!e||!src)return;if(e.tagName==='IMG')e.src=src;else e.style.backgroundImage=`url("${src}")`});
     }
     if(path==='registry.html'){
       const hs=document.querySelectorAll('h2'); if(hs[0])hs[0].textContent=s.registry.heading;

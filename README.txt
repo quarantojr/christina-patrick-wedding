@@ -11,3 +11,10 @@ BEFORE LAUNCH
 - Replace placeholder story, hotel, registry, schedule, contact, and RSVP details.
 - Connect the RSVP form to Formspree, Tally, Google Forms, or Airtable.
 - Confirm the wedding date/time in script.js.
+
+VERSION 3 — THE ARRIVAL
+- Cinematic arrival hero and page progress indicator
+- Editorial Black Walnut Farm story
+- Scroll-led venue journey from entrance to reception
+- Expanded weekend portal and refined countdown
+- Subtle parallax motion with reduced-motion accessibility support
